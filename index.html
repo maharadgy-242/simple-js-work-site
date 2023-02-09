@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schnauzers</title>
+    <style>
+      body {
+        background-image: url(https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/309/original/greenGrass.jpg?1661263206);
+        background-size: 100%;
+      }
+      h1,
+      h2 {
+        text-align: center;
+        color: #31061d;
+      }
+
+      h3 {
+        text-align: center;
+        color: rgb(97, 15, 15);
+      }
+
+      hr {
+        border: 2px solid rgb(125, 11, 11);
+        border-bottom-width: 0;
+        margin: 0 20px 0 20px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border-radius: 10px;
+        width: 400px;
+        max-width: 100%;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 15px;
+        margin: 20px 110px 10px 115px;
+        color: rgb(62, 17, 17);
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: rgb(62, 17, 17);
+        color: white;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 10px;
+        box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
+        transition: all 150ms ease-in-out;
+      }
+
+      button:hover {
+        background: rgb(64, 101, 7);
+        color: rgb(62, 17, 17);
+        cursor: pointer;
+      }
+
+      .backwall {
+        background-color: rgb(198, 250, 118);
+        display: block;
+        margin: 50px auto 50px;
+        width: 50%;
+        opacity: 0.9;
+        border-radius: 5px;
+      }
+
+      .learn-more {
+        display: block;
+        margin: 0 auto 0 113px;
+        text-decoration: none;
+        color: rgb(146, 7, 7);
+        font-size: 13px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+        color: rgb(237, 57, 57);
+      }
+
+      .footer {
+        text-align: center;
+        font-size: 13px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="backwall">
+      <br />
+      <h1>Do you like Schnauzer?</h1>
+
+      <h2>I like them very much</h2>
+      <hr />
+
+      <h3>Miniature schnauzer</h3>
+
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/306/original/miniature.jpg?1661263178"
+        alt="miniature schnauzer"
+      />
+      <p>
+        The Miniature Schnauzer, the smallest of the three Schnauzer breeds, is
+        a generally healthy, long-lived, and low-shedding companion. Add an
+        outgoing personality, a portable size, and sporty good looks, and you've
+        got an ideal family dog. Stocky, robust little dogs standing 12 to 14
+        inches, Miniature Schnauzers were bred down from their larger cousins,
+        Standard Schnauzers
+      </p>
+      <a
+        href="https://www.akc.org/dog-breeds/miniature-schnauzer/"
+        target="_blank"
+        class="learn-more"
+        ><strong>Learn more about Miniature</strong></a
+      >
+
+      <br />
+
+      <h3>Standard schnauzer</h3>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/307/original/mittelshnaucer.jpg?1661263190"
+        alt="Standard schnauzer"
+      />
+
+      <p>
+        The bold, bewhiskered Standard Schnauzer is a high-spirited farm dog
+        from Germany. They are the sometimes-willful but ever reliable
+        medium-sized members of the Schnauzer family of breeds. The Standard's
+        sporty look is a canine classic. A medium-size dog weighing between 35
+        and 45 pounds, the Standard Schnauzer is truly the standard Schnauzer:
+        larger than Miniatures, smaller than Giants.
+      </p>
+      <a
+        href="https://www.akc.org/dog-breeds/standard-schnauzer/"
+        target="_blank"
+        class="learn-more"
+        ><strong>Learn more about Standart</strong></a
+      >
+
+      <h3>Giant schnauzer</h3>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/044/308/original/rizenshnaucer.jpg?1661263198"
+        alt="giant schnauzer"
+      />
+
+      <p>
+        The Giant Schnauzer is a larger and more powerful version of the
+        Standard Schnauzer, and he should, as the breed standard says, "be a
+        bold and valiant figure of a dog." Great intelligence and loyalty make
+        him a stellar worker and companion. A well-bred Giant Schnauzer closely
+        resembles the Standard Schnauzer, only bigger. As their name suggests,
+        Giants are imposing. A male might stand as high as 27.5 inches at the
+        shoulder and weigh 95 pounds.
+      </p>
+      <a
+        href="https://www.akc.org/dog-breeds/giant-schnauzer/"
+        target="_blank"
+        class="learn-more"
+        ><strong>Learn more about Giant</strong></a
+      >
+
+      <br />
+      <button><strong>Buy Schnauzer</strong></button>
+
+      <br />
+      <p class="footer">
+        This is page built by
+        <a
+          href="https://www.shecodes.io/graduates/51429-mariia-stepchenko"
+          target="_blank"
+          >Mary Step</a
+        >
+      </p>
+      <br />
+      <script>
+        function buy() {
+          let name = prompt("What is your name?");
+          let dog = prompt("What kind of dog would you like to buy?");
+          let email = prompt("What is your email?");
+
+          alert(
+            "Thank you, " +
+              name +
+              "! We will contact you abt your " +
+              dog +
+              " as soon as possible! Schnauzers 🦮 can never be too many!!!"
+          );
+        }
+
+        let buttonBuy = document.querySelector("button");
+        buttonBuy.addEventListener("click", buy);
+      </script>
+    </div>
+  </body>
+</html>
